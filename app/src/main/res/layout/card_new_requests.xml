@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/myOpenRolesGridBackgroundColor"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/name"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:id="@+id/name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/location_experience"
+                android:drawableLeft="@drawable/ic_pin_drop_24dp"
+                android:drawablePadding="8dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:id="@+id/location_experience" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/current_role"
+                android:drawableLeft="@drawable/ic_work_24dp"
+                android:drawablePadding="8dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:id="@+id/current_role"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/qualification_college"
+                android:drawableLeft="@drawable/ic_qualification"
+                android:drawablePadding="8dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:id="@+id/qualification_college"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/accept_button"
+                    style="@style/Widget.Shrine.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/accept" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reject_button"
+                    style="@style/Widget.Shrine.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toStartOf="@id/accept_button"
+                    android:layout_toLeftOf="@id/accept_button"
+                    android:text="@string/reject" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

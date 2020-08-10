@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:title="Main">-->
+<!--    <item android:title="Main">-->
+<!--        <menu>-->
+<!--            <item android:title="@string/profile"/>-->
+<!--            <item android:title="@string/referrals"/>-->
+<!--            <item android:title="@string/job_search"-->
+<!--                android:icon="@drawable/shr_search"/>-->
+<!--            <item android:title="@string/blah"/>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+<!--    <item android:title="Connect">-->
+<!--        <menu>-->
+<!--            <item android:title="@string/connect_linkedin"/>-->
+<!--            <item android:title="@string/connect_twitter"/>-->
+<!--            <item android:title="@string/connect_facebook"/>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+    <group android:id="@+id/group1">
+        <item android:title="@string/profile"
+            android:icon="@drawable/ic_person_24dp"/>
+        <item android:title="@string/referrals"
+            android:icon="@drawable/ic_group_24dp"/>
+        <item android:title="@string/job_search"
+            android:icon="@drawable/shr_search"/>
+        <item android:title="@string/blah"/>
+    </group>
+<!--    was trying to insert separator using this View-->
+<!--        <View-->
+<!--            android:layout_width="56dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:background="?android:attr/textColorPrimary" />-->
+    <group android:id="@+id/group2">
+        <item android:title="@string/connect_linkedin"/>
+        <item android:title="@string/connect_twitter"/>
+        <item android:title="@string/connect_facebook"/>
+    </group>
+</menu>

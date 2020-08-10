@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewRoleFragment"
+    android:id="@+id/fragment_add_new_role"
+    android:maxWidth="128dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/referral_criteria_app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:collapseIcon="@drawable/ic_clear_all_black_18dp"
+            app:contentInsetStart="0dp"
+            app:title="@string/set_referral_criteria" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/product_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/myOpenRolesGridBackgroundColor"
+        android:elevation="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/containing_parallel_ll">
+
+                    <LinearLayout
+                        android:layout_weight="1.3"
+                        android:layout_gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:id="@+id/filters">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/availability_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/availability"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/experience_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/experience"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/colleges_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/colleges"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/employers_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/employers"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/skills_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/skills"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/location_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/location"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/expectation_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/expectation"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/current_role_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/current_role"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/gender_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/gender"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/age_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="Age"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/qualification_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="Qualification"
+                            android:backgroundTint="@color/primaryDark"
+                            app:cornerRadius="0dp"
+                            android:padding="12dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/filter_options">
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/containing_parallel_ll">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/save_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/save" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cancel_button"
+                            style="@style/Widget.Shrine.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_toStartOf="@id/save_button"
+                            android:layout_toLeftOf="@id/save_button"
+                            android:text="@string/button_cancel" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/clear_all_button"
+                            style="@style/Widget.Shrine.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/clear_all" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:gravity="bottom"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="24dp"-->
+<!--        android:paddingTop="16dp"-->
+<!--        android:id="@+id/add_new_role_linear_layout">-->
+
+<!--&lt;!&ndash;        <ListView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/list_view"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent" />&ndash;&gt;-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/availability_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/availability" />-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="12dp">-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/immediateCheckBox"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/immediate"/>-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/oneMonthCheckBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_toRightOf="@id/immediateCheckBox"-->
+<!--                    android:layout_marginLeft="32dp"-->
+<!--                    android:text="@string/_1_month"/>-->
+
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="12dp">-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/twoMonthsCheckBox"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/_2_months"/>-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/threeMonthsCheckBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/_3_months"-->
+<!--                    android:layout_toRightOf="@id/twoMonthsCheckBox"-->
+<!--                    android:layout_marginLeft="32dp"/>-->
+<!--            </RelativeLayout>-->
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/experience_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/experience" />-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginLeft="12dp">-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/max_exp_filled_exposed_text_input"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                android:layout_width="128dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@+id/min_exp_filled_exposed_text_input"-->
+<!--                android:layout_toEndOf="@+id/min_exp_filled_exposed_text_input"-->
+<!--                android:layout_marginLeft="32dp"-->
+<!--                android:hint="Max Exp">-->
+
+<!--                <AutoCompleteTextView-->
+<!--                    android:id="@+id/max_exp_filled_exposed_dropdown"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:inputType="none"-->
+<!--                    android:maxLines="1" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                android:id="@+id/min_exp_filled_exposed_text_input"-->
+<!--                android:layout_width="128dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:hint="Min Exp">-->
+
+<!--                <AutoCompleteTextView-->
+<!--                    android:id="@+id/min_exp_filled_exposed_dropdown"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:maxLines="1" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--        </RelativeLayout>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/colleges_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/colleges" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/employers_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/employers" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/skills_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/skills" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/location_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/location" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/current_role_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left"-->
+<!--            android:text="@string/current_role" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/gender_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="@string/gender" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/age_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="Age" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/qualification_button"-->
+<!--            style="@style/Widget.Shrine.Button.SentenceCaseTextButton"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:gravity="left|center"-->
+<!--            android:text="Qualification" />-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:gravity="bottom">-->
+
+<!--            &lt;!&ndash;            corners are still rounded not getting in cut shape theme changes required&ndash;&gt;-->
+<!--            &lt;!&ndash;            and space is still there on right side in each button&ndash;&gt;-->
+<!--            &lt;!&ndash;            MOST IMPORTANTLY not actually acting as floating buttons&ndash;&gt;-->
+<!--            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--                android:id="@+id/clear_all_button"-->
+<!--                style="@style/Widget.Shrine.FABButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_gravity="bottom|right"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:text="Clear All" />-->
+
+<!--            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--                android:id="@+id/cancel_button"-->
+<!--                style="@style/Widget.Shrine.Button.FABTextButton"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom|right"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:layout_toStartOf="@id/save_button"-->
+<!--                android:layout_toLeftOf="@id/save_button"-->
+<!--                android:text="@string/cancel" />-->
+
+<!--            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--                android:id="@+id/save_button"-->
+<!--                style="@style/Widget.Shrine.FABButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_gravity="bottom|right"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:text="@string/save"/>-->
+
+<!--            &lt;!&ndash;        <com.google.android.material.button.MaterialButton&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/clear_all_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            style="@style/Widget.Shrine.Button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_alignParentStart="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="@string/clear_all" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <com.google.android.material.button.MaterialButton&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/save_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            style="@style/Widget.Shrine.Button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="@string/save" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <com.google.android.material.button.MaterialButton&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/cancel_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            style="@style/Widget.Shrine.Button.TextButton"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_marginEnd="12dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_marginRight="12dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_toStartOf="@id/save_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_toLeftOf="@id/save_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="@string/cancel" />&ndash;&gt;-->
+<!--            &lt;!&ndash;            <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/add_new_open_roles_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_gravity="bottom|right"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="16dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:srcCompat="@drawable/ic_plus_24"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:contentDescription="FAB"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:backgroundTint="@color/colorPrimary"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:iconTint="@color/textColorPrimary"&ndash;&gt;-->
+<!--            &lt;!&ndash;                />&ndash;&gt;-->
+
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

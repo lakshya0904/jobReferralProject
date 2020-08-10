@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedRoleFragment"
+    android:id="@+id/fragment_selected_role"
+    android:maxWidth="128dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/referral_criteria_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:collapseIcon="@drawable/ic_clear_all_black_18dp"
+            app:contentInsetStart="0dp"
+            app:title="@string/referral_requests" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            Created dynamically in fragment-->
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:text="@string/_new"-->
+<!--                android:icon="@drawable/ic_fiber_new_24dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content" />-->
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:text="@string/history"-->
+<!--                android:icon="@drawable/ic_history_24dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"/>-->
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/selected_role_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!--        layout_behavior so that no part of view gets hidden behind appBar and tablayout-->
+<!--        Scroll behaviors only work if the view is a direct child of the coordinator layout.-->
+<!--        CoordinatorLayout is a super-powered FrameLayout. So you can expect the typical "lay views on top of other views" FrameLayout behavior.-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    </androidx.viewpager.widget.ViewPager>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/product_grid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="104dp"-->
+<!--        android:background="@color/myOpenRolesGridBackgroundColor"-->
+<!--        android:elevation="8dp"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/add_new_role_linear_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="bottom"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="24dp"-->
+<!--            android:paddingTop="16dp"></LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    tools:context=".SelectedRoleFragment">-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginBottom="75dp"-->
+    <!--        android:text="@string/app_name"-->
+    <!--        android:textAppearance="@style/TextAppearance.Shrine.Title"  />-->
+
+    <!--</ScrollView>-->

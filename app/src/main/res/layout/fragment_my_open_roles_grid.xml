@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--DUMPED-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOpenRolesGridFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/menu"
+            app:title="@string/app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/myOpenRolesGridBackgroundColor"
+        android:paddingStart="@dimen/my_open_roles_grid_spacing"
+        android:paddingEnd="@dimen/my_open_roles_grid_spacing"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="180dp"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    android:layout_marginLeft="16dp"-->
+<!--    android:layout_marginRight="16dp"-->
+<!--    android:layout_marginTop="70dp"-->
+<!--    app:cardBackgroundColor="?attr/colorPrimaryDark"-->
+<!--    app:cardCornerRadius="4dp"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="8dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="@string/job_title"-->
+<!--            android:textAppearance="?attr/textAppearanceHeadline6" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="@string/post_date"-->
+<!--            android:textAppearance="?attr/textAppearanceBody2" />-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="@string/requests"-->
+<!--            android:textAppearance="?attr/textAppearanceBody2" />-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="@string/referred"-->
+<!--            android:textAppearance="?attr/textAppearanceBody2" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/log_in_button"-->
+<!--            style="@style/Widget.Shrine.Button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+
+<!--            android:layout_gravity="right"-->
+<!--            android:text="@string/view_requests" />-->
+
+<!--    </LinearLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->

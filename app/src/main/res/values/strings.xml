@@ -1,0 +1,130 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Refer</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_next">Next</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="button_log_in">Log in</string>
+    <string name="error_password">Password must contain at least 8 characters.</string>
+    <string name="error_username">Enter valid username.</string>
+    <string name="filter_title">Filter</string>
+    <string name="search_title">Search</string>
+    <string name="product_title">Title</string>
+    <string name="product_description">Secondary text</string>
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="featured_label">Featured</string>
+    <string name="apartment_label">Apartment</string>
+    <string name="accessories_label">Accessories</string>
+    <string name="shoes_label">Shoes</string>
+    <string name="tops_label">Tops</string>
+    <string name="bottoms_label">Bottoms</string>
+    <string name="dresses_label">Dresses</string>
+    <string name="account_label">My Account</string>
+
+    <string name="profile">Profile</string>
+    <string name="referrals">Referral</string>
+    <string name="job_search">Job Search</string>
+    <string name="blah">Blah</string>
+    <string name="connect_linkedin">Connect LinkedIN</string>
+    <string name="connect_facebook">Connect Facebook</string>
+    <string name="connect_twitter">Connect Twitter</string>
+    <string name="my_open_roles_open_nav_drawer">Navigation Drawer Open</string>
+    <string name="my_open_roles_close_nav_drawer">Navigation Drawer Close</string>
+
+    <string name="start" tools:ignore="StringEscaping">Let\'s get started...</string>
+    <string name="connect">connect</string>
+    <string name="job_title">Job Title</string>
+    <string name="post_date">Post Date</string>
+    <string name="requests">Requests</string>
+    <string name="referred">Referred</string>
+    <string name="view_requests">View Requests</string>
+    <string name="my_open_roles">My Open Roles</string>
+    <string name="set_referral_criteria">Set Referral Criteria</string>
+    <string name="clear_all">Clear All</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="availability">Availability</string>
+    <string name="experience">Experience</string>
+    <string name="colleges">Colleges</string>
+    <string name="employers">Employers</string>
+    <string name="skills">Skills</string>
+    <string name="location">Location</string>
+    <string name="current_role">Current Role</string>
+    <string name="gender">Gender</string>
+    <string name="immediate">Immediate</string>
+    <string name="_1_month">1 month</string>
+    <string name="_2_months">2 months</string>
+    <string name="_3_months">3 months</string>
+    <string name="role_name">Role name</string>
+    <string name="save_referral_criteria">Save Referral Criteria</string>
+    <string name="filter">Filter</string>
+    <string name="_new">New</string>
+    <string name="history">History</string>
+    <string name="referral_requests">Referral Requests</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_role">Selected role</string>
+    <string name="string">String</string>
+    <string name="name">Name</string>
+    <string name="location_experience">Location,experience</string>
+    <string name="qualification">Qualification</string>
+    <string name="college">College</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="qualification_college">Qualification, College</string>
+    <string name="message_to_the_applicant">Message to the Applicant</string>
+    <string name="confirm">Confirm</string>
+    <string name="applicant_to_reject">Applicant to reject</string>
+    <string name="message_to_hr_or_hiring_manager">Message to HR or Hiring Manager</string>
+    <string name="hr_email_id">HR Email ID</string>
+    <string name="job_id_optional">Job ID (Optional)</string>
+    <string name="expectation">Expectation</string>
+    <string name="search_college">Search College</string>
+    <string name="error_username_taken">Username already taken.</string>
+    <string name="text_view_sign_up">Or, Sign up</string>
+    <string name="text_view_log_in">Or, Log in</string>
+    <string name="hint_mobile_username_email">Mobile number, username or email</string>
+    <string name="type_username">Type username</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="personal_email_id">Personal Email ID</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="error_confirm_password">The passwords are not equal.</string>
+    <string name="error_name">Name cannot be empty</string>
+    <string name="error_mobile_email"><![CDATA[Both mobile number & email cannot be empty.]]></string>
+    <string name="error_email_taken">Email already used.</string>
+    <string name="error_email_format">Email address format is invalid.</string>
+    <string name="hint_company">Company</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+    <string name="error_designation">Designation can\'t be empty.</string>
+    <string name="error_current_employer">Current employer can\'t be empty.</string>
+    <string name="error_location">Location can\'t be empty.</string>
+    <string name="error_month">Month can\'t be empty.</string>
+    <string name="error_year">Year can\'t be empty.</string>
+    <string name="error_work_email">Work email can\'t be empty.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="colleges">
+        <!--         android:textStyle="bold" isn't working
+    neither <b></b> is working....-->
+        <item>All Tier-1 Engineering</item>
+        <item>BITS</item>
+        <item>IIT-B</item>
+        <item>IIT-M</item>
+        <item>IIT-Kgp</item>
+        <item>IIT-M</item>
+        <item>IIT-Kanpur</item>
+        <item>IIT-G</item>
+        <item>All Tier-1 MBA</item>
+        <item>IIM-A</item>
+        <item>IIM-B</item>
+        <item>IIM-K</item>
+        <item>YALE</item>
+        <item>FMS</item>
+    </string-array>
+</resources>

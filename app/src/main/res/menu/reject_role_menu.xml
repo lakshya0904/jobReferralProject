@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--dumped-->
+<!--bcoz dialod box turned out better as you need Parcelable to get back to selected role and there is no such issue with dialog box-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/filter"-->
+<!--        android:icon="@drawable/filter"-->
+<!--        android:title="@string/filter"-->
+<!--        app:showAsAction="always" />-->
+</menu>

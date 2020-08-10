@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FBB8AC</color>
+    <color name="colorPrimaryDark">#FBB8AC</color>
+    <!--     the colorPrimaryDark attribute controls the color of the status bar.-->
+    <color name="colorAccent">#FEDBD0</color>
+<!--    The colorAccent attribute controls the color of the top app bar-->
+    <color name="textColorPrimary">#442C2E</color>
+<!--    textColorPrimary will style the text across all elements, including the top app bar and the icons in our top app bar.-->
+
+    <color name="toolbarIconColor">@color/textColorPrimary</color>
+    <!--    modified for new theme-->
+    <!--    <color name="toolbarIconColor">#FFFFFF</color>-->
+    <color name="loginPageBackgroundColor">#FFFFFF</color>
+    <color name="newReferralRequestsBackgroundColor">#FFFFFF</color>
+    <color name="historyReferralRequestsBackgroundColor">#FFFFFF</color>
+    <color name="myOpenRolesGridBackgroundColor">#FFFBFA</color>
+    <color name="textInputOutlineColor">#FBB8AC</color>
+
+    <color name="primary">#FEDBD0</color>
+    <color name="primaryDark">#FBB8AC</color>
+    <color name="primaryVariant">#442C2E</color>
+
+    <color name="secondary">#FEEAE6</color>
+    <color name="surface">#FFFBFA</color>
+    <color name="error">#C5032B</color>
+    <color name="clickable">#0000EE</color>
+    <color name="rejectFragmentBackgroundColor">#FFFFFF</color>
+
+
+</resources>

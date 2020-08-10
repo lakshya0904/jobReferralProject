@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+            <!-- Chips can be declared here, or added dynamically. -->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:id="@+id/no_open_posiion_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Open Position"
+                android:gravity="center_horizontal"
+                android:layout_margin="6dp"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:id="@+id/late_joinee_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Late Joinee"
+                android:layout_toRightOf="@+id/no_open_posiion_chip"
+                android:layout_margin="6dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:id="@+id/irrelevant_experience_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Irrelevant Experience"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"/>
+        </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center">
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:id="@+id/cultural_misfit_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cultural Misfit"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"/>
+             <com.google.android.material.chip.Chip
+                 style="@style/Widget.MaterialComponents.Chip.Filter"
+                 android:id="@+id/high_ctc_chip"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="High CTC"
+                 android:layout_toRightOf="@+id/cultural_misfit_chip"
+                 android:layout_marginLeft="6dp"
+                 android:layout_marginRight="6dp"
+                 android:layout_marginBottom="6dp"/>
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center">
+             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:id="@+id/other_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                 android:layout_marginLeft="6dp"
+                 android:layout_marginRight="6dp"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="28dp"
+            android:hint="@string/message_to_the_applicant">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:gravity="top"
+                android:inputType="text"
+                android:maxLines="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
