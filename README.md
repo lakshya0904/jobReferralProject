@@ -1,4 +1,4 @@
-# jobReferralProject
+# Job Referral Project
 
 OVERVIEW
 
