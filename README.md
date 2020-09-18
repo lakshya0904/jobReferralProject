@@ -11,7 +11,7 @@ Candidates looking for job change face the following problems:
 1. Company discovery: 
 
 Anyone looking for a job change has certain expectations in mind from the next employer, role in terms of compensation, work-life balance, work city, office location in the city, Organization type: product/service, B2B/B2C etc., business model etc.
-Based on these expectations, the candidate makes a list of organisations he wishes to apply to. There are 13000+ organisations with offices in Bangalore. A candidate on his own may not be aware of 30-40 companies fitting his search criteria. Most job search websites are listing driven which means a company would never appear on these sites if they are not actively posting their openings on these sites. Products like glassdoor and LinkedIn also do not provide detailed organization search and filter features. 
+Based on these expectations, the candidate makes a list of organisations he wishes to apply to. Say, there are 13000+ organisations with offices in Bangalore. A candidate on his own may not be aware of 30-40 companies fitting his search criteria. Most job search websites are listing driven which means a company would never appear on these sites if they are not actively posting their openings on these sites. Products like glassdoor and LinkedIn also do not provide detailed organization search and filter features. 
 So, if we can help candidates discover companies relevant to their experience, their options open up and their job switch time will decrease. This will also help companies widen their candidate funnel.
 
 2. Candidate Discovery & Access to Referrals:
