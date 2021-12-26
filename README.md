@@ -22,6 +22,8 @@ Even if we help the candidates discover companies like mentioned in point #1, it
 There are Facebook groups where people with a common thread in their education/work history, help each other with referrals actively. BITS Pilani’s referral network is one such group. Significant engagement is seen in these groups. But a fb group has its own limitations.
 So, it makes sense to build a 2 sided platform. One side would be candidates looking for job change and others would be ‘connectors’ who would want to help job seekers with referrals at their current organisation.
 
+<hr>
+
 ### Value Propositions
 
 For candidates:
